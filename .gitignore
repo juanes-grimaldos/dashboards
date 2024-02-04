@@ -1,0 +1,14 @@
+# python environment
+.env
+
+# IDE configuration
+.vscode
+
+# Enviroment variables
+.env
+
+# keys json file
+src/kaggle.json
+
+# exclude datasets
+src/data
