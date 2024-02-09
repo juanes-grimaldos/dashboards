@@ -12,3 +12,6 @@ src/kaggle.json
 
 # exclude datasets
 src/data
+
+# exclude IDE configuration
+.idea
