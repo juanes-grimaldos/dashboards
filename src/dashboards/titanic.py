@@ -1,9 +1,10 @@
+import os
+os.chdir(os.path.dirname(os.path.dirname(__file__)))
 import streamlit as st
 import matplotlib.pyplot as plt
 from model.logistic_survival_model import LogisticSurvivalModel
 
 model_results = LogisticSurvivalModel().clean_df()
-
 
 train_score = model_results['scores_and_predictions']['train_score']
 test_score = model_results['scores_and_predictions']['test_score']
@@ -50,4 +51,3 @@ if name != '':
     else:
         st.subheader('Passenger {} would not have survived with a probability of {}%'.format(name, round(
             predict_probability[0][0] * 100, 3)))
-
